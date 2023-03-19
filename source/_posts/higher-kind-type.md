@@ -1,6 +1,7 @@
 ---
 title: Higher Kind Type
 date: 2023/01/25 17:15
+excerpt: 小孩子不懂事，随手写的 HKT
 ---
 
 随手写着玩的 HKT
