@@ -2,6 +2,13 @@
 title: Higher Kind Type
 date: 2023/01/25 17:15
 excerpt: 小孩子不懂事，随手写的 HKT
+tags:
+ - Rust
+ - 函数式编程
+ - 2023
+categories:
+ - 编程
+ - Rust
 ---
 
 随手写着玩的 HKT

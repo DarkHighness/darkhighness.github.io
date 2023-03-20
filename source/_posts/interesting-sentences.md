@@ -1,6 +1,10 @@
 ---
 title: 一些有趣的句子
 date: 2023/01/24 20:45:00
+tags:
+ - 日常
+categories:
+ - 日常
 ---
 
 > We say that a language is compiled if the translator analyzes it thoroughly (rather than effecting some "mechanical" transformation), and if the intermediate program does not bear a strong resemblance to the source. These two characteristics—thorough analysis and nontrivial transformation—are the hallmarks of compilation.  
