@@ -350,7 +350,7 @@ navbar:
     - { key: "category", link: "/categories/", icon: "iconfont icon-category-fill" }
     - { key: "tag", link: "/tags/", icon: "iconfont icon-tags-fill" }
     - { key: "about", link: "/about/", icon: "iconfont icon-user-fill" }
-    #- { key: "links", link: "/links/", icon: "iconfont icon-link-fill" }
+    - { key: "links", link: "/links/", icon: "iconfont icon-link-fill" }
 
 # 搜索功能，基于 hexo-generator-search 插件，若已安装其他搜索插件请关闭此功能，以避免生成多余的索引文件
 # Search feature, based on hexo-generator-search. If you have installed other search plugins, please disable this feature to avoid generating redundant index files
@@ -997,22 +997,40 @@ links:
   # Member item of page
   items:
     - {
-      title: "Fluid Blog",
-      intro: "主题博客",
-      link: "https://hexo.fluid-dev.com/",
-      avatar: "/img/favicon.png"
+      title: "Recycle Bin",
+      intro: "垃圾桶",
+      link: "https://blog.i64d.com/",
+      avatar: "/img/recycle_bin.png"
     }
     - {
-      title: "Fluid Docs",
-      intro: "主题使用指南",
-      link: "https://hexo.fluid-dev.com/docs/",
-      avatar: "/img/favicon.png"
+      title: "Indexyz",
+      intro: "Indexyz 先生",
+      link: "https://blog.indexyz.me/",
+      avatar: "/img/default-avatar.jpg"
     }
     - {
-      title: "Fluid Repo",
-      intro: "主题 GitHub 仓库",
-      link: "https://github.com/fluid-dev/hexo-theme-fluid",
-      avatar: "/img/favicon.png"
+      title: "Darkyooo",
+      intro: "别把看重的东西附上无边的价值",
+      link: "https://darkyzhou.net/",
+      avatar: "/img/darkyo.jpg"
+    }
+    - {
+      title: "9032676",
+      intro: "为探索而生",
+      link: "https://9032676.com/",
+      avatar: "/img/90-background.png"
+    }
+    - {
+      title: "NIL",
+      intro: "雀魂神仙",
+      link: "https://cireu.github.io/",
+      avatar: "/img/default-avatar.jpg"
+    }
+    - {
+      title: "USTC-zzzz",
+      intro: "USTC-zzzz's blog",
+      link: "https://blog.ustc-zzzz.net/",
+      avatar: "/img/default-avatar.jpg"
     }
 
   # 当成员头像加载失败时，替换为指定图片
