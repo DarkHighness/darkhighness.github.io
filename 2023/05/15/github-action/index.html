@@ -18,22 +18,24 @@
   <meta name="author" content="Twiliness">
   <meta name="keywords" content="">
   
-    <meta name="description" content="为什么想写博客？最开始就是虚荣心作祟，圈子里的大佬又强，博客又好看，我也想整一个。 不过那时候博客首选应该还是 WordPress，像 Jekyll， Hexo，Ghost 这种静态生成工具，都是后面的事情了。 为什么不写博客？如果你很 “不幸” 的看过我之前的博客，你会注意到我的博客包括：“Java 的反射为什么慢？你为什么应该使用 MethodHandle”，“什么是 Product 积，什么">
+    <meta name="description" content="Actions Hexo 页面自动构建 WakaTime 自动更新 贪吃蛇 Commit History 生成 3D Commit History 生成   以下内容复用自 https:&#x2F;&#x2F;github.com&#x2F;X-lab2017&#x2F;oss101&#x2F;issues&#x2F;69  Platane&#x2F;snk 是一个用以根据你的 Github  Contributions Graph 生成一个 “贪吃蛇游戏">
 <meta property="og:type" content="article">
-<meta property="og:title" content="关于博客写作">
-<meta property="og:url" content="https://twiliness.site/2023/03/20/about-blog/index.html">
+<meta property="og:title" content="Github Action 作业报告">
+<meta property="og:url" content="https://twiliness.site/2023/05/15/github-action/index.html">
 <meta property="og:site_name" content="Twiliness&#39;s Blog">
-<meta property="og:description" content="为什么想写博客？最开始就是虚荣心作祟，圈子里的大佬又强，博客又好看，我也想整一个。 不过那时候博客首选应该还是 WordPress，像 Jekyll， Hexo，Ghost 这种静态生成工具，都是后面的事情了。 为什么不写博客？如果你很 “不幸” 的看过我之前的博客，你会注意到我的博客包括：“Java 的反射为什么慢？你为什么应该使用 MethodHandle”，“什么是 Product 积，什么">
+<meta property="og:description" content="Actions Hexo 页面自动构建 WakaTime 自动更新 贪吃蛇 Commit History 生成 3D Commit History 生成   以下内容复用自 https:&#x2F;&#x2F;github.com&#x2F;X-lab2017&#x2F;oss101&#x2F;issues&#x2F;69  Platane&#x2F;snk 是一个用以根据你的 Github  Contributions Graph 生成一个 “贪吃蛇游戏">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-03-20T13:00:00.000Z">
+<meta property="og:image" content="https://raw.githubusercontent.com/DarkHighness/DarkHighness/master/dist/github-snake.svg">
+<meta property="article:published_time" content="2023-05-15T07:00:00.000Z">
 <meta property="article:modified_time" content="2023-05-15T06:56:57.498Z">
 <meta property="article:author" content="Twiliness">
-<meta property="article:tag" content="日常">
+<meta property="article:tag" content="课程作业">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/DarkHighness/DarkHighness/master/dist/github-snake.svg">
   
   
   
-  <title>关于博客写作 - Twiliness&#39;s Blog</title>
+  <title>Github Action 作业报告 - Twiliness&#39;s Blog</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -211,7 +213,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="关于博客写作"></span>
+            <span id="subtitle" data-typed-text="Github Action 作业报告"></span>
           
         </div>
 
@@ -222,8 +224,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-03-20 21:00" pubdate>
-          2023年3月20日 晚上
+        <time datetime="2023-05-15 15:00" pubdate>
+          2023年5月15日 下午
         </time>
       </span>
     
@@ -234,7 +236,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.3k 字
+          1.7k 字
         
       </span>
     
@@ -245,7 +247,7 @@
         
         
         
-          11 分钟
+          15 分钟
         
       </span>
     
@@ -283,44 +285,37 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">关于博客写作</h1>
+            <h1 style="display: none">Github Action 作业报告</h1>
             
             
               <div class="markdown-body">
                 
-                <h2 id="为什么想写博客？"><a href="#为什么想写博客？" class="headerlink" title="为什么想写博客？"></a>为什么想写博客？</h2><p>最开始就是虚荣心作祟，圈子里的大佬又强，博客又好看，我也想整一个。 不过那时候博客首选应该还是 WordPress，像 Jekyll， Hexo，Ghost 这种静态生成工具，都是后面的事情了。</p>
-<h2 id="为什么不写博客？"><a href="#为什么不写博客？" class="headerlink" title="为什么不写博客？"></a>为什么不写博客？</h2><p>如果你很 “不幸” 的看过我之前的博客，你会注意到我的博客包括：<code>“Java 的反射为什么慢？你为什么应该使用 MethodHandle”</code>，<code>“什么是 Product 积，什么是 Coproduct 余积”</code>，<code>“用 Coq 证明一个选择排序是正确的”</code> 的一些关于 Java 或者是函数式的技术分享到 <code>“今天又发生了什么什么”</code>，<code>“今天又和谁一起玩了什么游戏”</code> 之内的日常琐事。 </p>
-<p>高质量的产出是十分困难的，更何况是一个 <del>“菜菜的我”</del>。 我的博客更多的是分享自己的学习记录，笔记之类的东西，但如今繁多的知识库软件如：<a target="_blank" rel="noopener" href="https://obsidian.md/">Obsidian</a>， <a target="_blank" rel="noopener" href="https://logseq.com/">LogSeq</a>，<a target="_blank" rel="noopener" href="https://www.notion.so/zh-cn">Notion</a>。 再加上他们各具特色 Markdown 方言，去维护一个博客，迁移到生成器支持的标准 Markdown 语法，再去修改和美化格式，属实说不上有什么动力。 再者就是老生常谈的图片资源，也要去做压缩和管理 <del>恐怖的首屏加载时间</del>，比如图床 sm.ms。 </p>
-<div class="note note-info">
-            <p>顺带一提，其实 Github 也有很多 Bot 可以做一些自动化操作，比如说 ImgBot 可以自动的为仓库中的图片进行压缩，并发起 Pull Request，正如在本博客中的仓库所看到的。</p>
-          </div>
-
-<p>简单来说，写博客和维护博客都不是一件容易的事情。<del>所以我的博客一年一换主题，但是内容几年都不一定一更</del></p>
-<h2 id="为什么选择-Hexo"><a href="#为什么选择-Hexo" class="headerlink" title="为什么选择 Hexo?"></a>为什么选择 Hexo?</h2><ol>
-<li>Hexo 的文档详尽，配置也趋于简单；</li>
-<li>Hexo 的插件生态丰富，可以完成很多定制化的操作，如：<code>hexo-generator-search</code>，<code>hexo-generator-index</code> 等；</li>
-<li>相同类型的 Markdown 静态网页生成器其实有很多选择，但功能上大体相同的，不存在专属特性，或者杀手级插件；</li>
+                <h2 id="Actions"><a href="#Actions" class="headerlink" title="Actions"></a>Actions</h2><ol>
+<li><a target="_blank" rel="noopener" href="https://github.com/DarkHighness/darkhighness.github.io/blob/main/.github/workflows/pages.yml">Hexo 页面自动构建</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/DarkHighness/DarkHighness/blob/master/.github/workflows/wakatime.yml">WakaTime 自动更新</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/DarkHighness/DarkHighness/blob/master/.github/workflows/snake.yml">贪吃蛇 Commit History 生成</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/DarkHighness/DarkHighness/blob/master/.github/workflows/profile-3d.yml">3D Commit History 生成</a></li>
 </ol>
-<h2 id="为什么不选择-Wordpress-或者其他动态博客工具？"><a href="#为什么不选择-Wordpress-或者其他动态博客工具？" class="headerlink" title="为什么不选择 Wordpress 或者其他动态博客工具？"></a>为什么不选择 Wordpress 或者其他动态博客工具？</h2><p>简单来说: <strong>看需求</strong><br>复杂来说:</p>
+<blockquote>
+<p>以下内容复用自 <a target="_blank" rel="noopener" href="https://github.com/X-lab2017/oss101/issues/69">https://github.com/X-lab2017/oss101/issues/69</a></p>
+</blockquote>
+<p><strong><a target="_blank" rel="noopener" href="https://github.com/Platane/snk">Platane&#x2F;snk</a></strong> 是一个用以根据你的 Github  Contributions Graph 生成一个 “贪吃蛇游戏” 的仓库。它的输出看起来像是这样:<br><img src="https://raw.githubusercontent.com/DarkHighness/DarkHighness/master/dist/github-snake.svg" srcset="/img/loading.gif" lazyload alt="Sample"></p>
+<p>而要在你的仓库中，实现每日动态更新，可以采用 Github Actions的方式，模板看起来像是这样:</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">name:</span> <span class="hljs-string">Snake</span> <span class="hljs-string">Readme</span><br><br><span class="hljs-attr">on:</span><br>  <span class="hljs-attr">workflow_dispatch:</span><br>  <span class="hljs-attr">schedule:</span><br>    <span class="hljs-bullet">-</span> <span class="hljs-attr">cron:</span> <span class="hljs-string">&quot;0 6 * * *&quot;</span><br><br><span class="hljs-attr">jobs:</span><br>  <span class="hljs-attr">update-readme:</span><br>    <span class="hljs-attr">name:</span> <span class="hljs-string">Generate</span> <span class="hljs-string">Snake</span> <span class="hljs-string">SVG</span><br>    <span class="hljs-attr">runs-on:</span> <span class="hljs-string">ubuntu-latest</span><br>    <span class="hljs-attr">steps:</span><br>      <span class="hljs-bullet">-</span> <span class="hljs-attr">uses:</span> <span class="hljs-string">actions/checkout@v3</span><br>      <span class="hljs-bullet">-</span> <span class="hljs-attr">uses:</span> <span class="hljs-string">Platane/snk@v2</span><br>        <span class="hljs-attr">with:</span><br>          <span class="hljs-comment"># github user name to read the contribution graph from (**required**)</span><br>          <span class="hljs-comment"># using action context var `github.repository_owner` or specified user</span><br>          <span class="hljs-attr">github_user_name:</span> <span class="hljs-string">$&#123;&#123;</span> <span class="hljs-string">github.repository_owner</span> <span class="hljs-string">&#125;&#125;</span><br><br>          <span class="hljs-comment"># list of files to generate.</span><br>          <span class="hljs-comment"># one file per line. Each output can be customized with options as query string.</span><br>          <span class="hljs-comment">#</span><br>          <span class="hljs-comment">#  supported options:</span><br>          <span class="hljs-comment">#  - palette:     A preset of color, one of [github, github-dark, github-light]</span><br>          <span class="hljs-comment">#  - color_snake: Color of the snake</span><br>          <span class="hljs-comment">#  - color_dots:  Coma separated list of dots color.</span><br>          <span class="hljs-comment">#                 The first one is 0 contribution, then it goes from the low contribution to the highest.</span><br>          <span class="hljs-comment">#                 Exactly 5 colors are expected.</span><br>          <span class="hljs-attr">outputs:</span> <span class="hljs-string">|</span><br><span class="hljs-string">            dist/github-snake.svg</span><br><span class="hljs-string">            dist/github-snake-dark.svg?palette=github-dark</span><br><span class="hljs-string">            dist/ocean.gif?color_snake=orange&amp;color_dots=#bfd6f6,#8dbdff,#64a1f4,#4b91f1,#3c7dd9</span><br><span class="hljs-string"></span>      <span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">Commit</span> <span class="hljs-string">&amp;</span> <span class="hljs-string">Push</span><br>        <span class="hljs-attr">run:</span> <span class="hljs-string">|</span><br><span class="hljs-string">          git config user.name github-actions</span><br><span class="hljs-string">          git config user.email github-actions@github.com</span><br><span class="hljs-string">          git add -A .</span><br><span class="hljs-string">          git commit -m &quot;snake profiles&quot;</span><br><span class="hljs-string">          git push</span><br></code></pre></td></tr></table></figure>
+
+<p>一份 Github Actions 的文件主要定义了：</p>
 <ol>
-<li>我嫖 Github Pages 不就是为了省钱吗.jpg，还要个后端服务器不由得花钱 💰？</li>
-<li>我的博客又不会有多少人👀，为什么要折腾得那么麻烦?</li>
+<li><code>on</code>: 在何种情况下触发这一 workflow，它可以是某种事件，如: <code>push</code>, <code>fork</code>，也可以是一个 cron 格式的时间；</li>
+<li><code>jobs</code>: 这个 workflow 需要执行的任务，在这个例子中，<code>Generate Snake SVG</code> 定义了一个在 <code>ubuntu-latest</code> 环境上执行的任务，它共分为 3 个步骤:<ol>
+<li><code>actions/checkout@v3</code>: 将当前仓库拉取到环境中；</li>
+<li><code>Platane/snk@v2</code>: 生成 <code>github_user_name</code> 的对应 ”贪吃蛇“ 图片;</li>
+<li><code>Commit &amp; Push</code>: 将图片 commit 并 push 到仓库中;</li>
 </ol>
-<h2 id="为什么选择-Fluid-主题？"><a href="#为什么选择-Fluid-主题？" class="headerlink" title="为什么选择 Fluid 主题？"></a>为什么选择 Fluid 主题？</h2><ol>
-<li>主题外观足够简洁，满足自己的审美需要；</li>
-<li>主题的功能已经完美覆盖了自己的需求：本地搜索，懒加载，Latex 公式支持，Mermaid 流程图，Tag 支持，代码块支持，评论支持；</li>
-<li>默认的页面支持已经包括了日常所需的：<code>首页</code>，<code>归档</code>，<code>分类</code>，<code>标签</code>，<code>关于</code> 和 <code>友链</code> 几种常见的页面需求；</li>
-<li>支持 Latex 编写，Mermaid 流程图等附加的 Markdown 功能；</li>
-<li>支持多种评论插件，如来比力，Gitalk 等；</li>
-<li>支持 Tag 插件，非常不错的 “引用” 替代品，例如:</li>
+</li>
 </ol>
-<div class="note note-info">
-            <p><strong>关于主题和字体选择</strong><br><a target="_blank" rel="noopener" href="https://www.programmingfonts.org/">Programming Fonts</a> 这个网站的字体都试过了，Nerd Font 支持的也试过了， Windows 下 MacType 也装了，可是终究是不满意字体的显示效果。 Ide 的主题从 Material Design 到 OneDark，到 GruvBox 到 … 也试过了，可是频频还是觉得看不顺眼，以至于要摸鱼换主题。</p>
-          </div>
+<hr>
+<p>如果觉得 Github Actions 调试困难，陷入不断的 Push ，手动触发，然后修改的循环，不妨试试: <strong><a target="_blank" rel="noopener" href="https://github.com/nektos/act">nektos&#x2F;act</a></strong></p>
 
-<div class="note note-danger">
-            <p><strong>1080P 是 125%, 2K 也是 125% 的人</strong><br>不能理解现在为什么还有网页和应用的响应式布局这么烂.jpg</p>
-          </div> 
                 
               </div>
             
@@ -338,7 +333,7 @@
     
       <span class="category-chain">
         
-  <a href="/categories/%E6%97%A5%E5%B8%B8/" class="category-chain-item">日常</a>
+  <a href="/categories/%E8%AF%BE%E7%A8%8B%E4%BD%9C%E4%B8%9A/" class="category-chain-item">课程作业</a>
   
   
 
@@ -353,7 +348,7 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/%E6%97%A5%E5%B8%B8/">#日常</a>
+        <a href="/tags/%E8%AF%BE%E7%A8%8B%E4%BD%9C%E4%B8%9A/">#课程作业</a>
       
     </div>
   
@@ -365,8 +360,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>关于博客写作</div>
-      <div>https://twiliness.site/2023/03/20/about-blog/</div>
+      <div>Github Action 作业报告</div>
+      <div>https://twiliness.site/2023/05/15/github-action/</div>
     </div>
     <div class="license-meta">
       
@@ -378,7 +373,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2023年3月20日</div>
+          <div>2023年5月15日</div>
         </div>
       
       
@@ -410,18 +405,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/05/15/github-action/" title="Github Action 作业报告">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">Github Action 作业报告</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/01/25/higher-kind-type/" title="Higher Kind Type">
-                        <span class="hidden-mobile">Higher Kind Type</span>
+                      <a href="/2023/03/20/about-blog/" title="关于博客写作">
+                        <span class="hidden-mobile">关于博客写作</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
